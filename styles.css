@@ -1,0 +1,105 @@
+/* styles.css */
+
+/* GENERAL LAYOUT */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #111;
+}
+
+/* HEADER + NAVIGATION */
+header {
+  background-color: #111;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin: 0;
+}
+
+nav a {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* HERO SECTION */
+#hero {
+  background-color: #f1f1f1;
+  font-style: italic;
+  font-size: 1.25em;
+  padding: 2em;
+  border-left: 5px solid red;
+}
+
+/* IMAGE GRIDS */
+.poster-grid,
+.bubble-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2em;
+  margin-top: 2em;
+}
+
+.poster-grid img,
+.bubble-grid img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* FOOTER */
+footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  font-size: 0.9em;
+}
+/* CAROUSEL STYLING */
+#carousel {
+  padding: 2em 0;
+  background: #fff;
+  border-bottom: 2px solid #ccc;
+  overflow: hidden;
+}
+
+.carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  width: max-content;
+}
+
+.carousel-pair {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 650px;
+  gap: 2em;
+  padding: 1em;
+}
+
+.carousel-pair img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border: 2px solid #eee;
+  background: #fff;
+}
